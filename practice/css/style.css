@@ -1,0 +1,353 @@
+body {
+    width: 375px;
+}
+/*Header Container*/
+.headerContainer {
+    height: 222px;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 65px 1fr .75fr .25fr 1fr 1fr;
+    grid-template-rows: 35px 70px 35px 30px;
+    grid-template-areas: 
+    'back blank blank blank blank blank'
+    'header header header header header header'
+    'profile nameDisplay nameDisplay nameDisplay nameDisplay nameDisplay'
+    'profile nameDisplay nameDisplay nameDisplay nameDisplay nameDisplay';
+    background-color:#EAF8F8;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+.headerContainer > div {
+    background-color: #EAF8F8;
+    text-align: left;
+  }
+.blank { 
+    grid-area: blank;
+}
+.back { 
+    grid-area: back; 
+}
+.header { 
+    grid-area: header; 
+}
+.Title {
+     font-family: "SF Pro", sans-serif;
+     font-size: 30px;
+     font-weight: 650;
+     color: #2F767A;
+}
+.profileImg {
+    grid-area: profile;
+}
+.nameDisplay { 
+    grid-area: nameDisplay; 
+}
+.name {
+    font-family: "SF Pro", sans-serif;
+    font-size: 24px;
+    font-weight: 650;
+    color: #393939;
+    line-height: 1.5;
+}
+.DOB {
+    font-family: "SF Pro", sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    color: #393939;
+}
+/*Toggle Buttons*/
+.vaccinationToggle {
+    width: 160px;
+    height: 33px;
+    position: absolute;
+    left: 20px;
+    top: 240px;
+    background-color: #C7EAEA;
+    border: #C7EAEA 1px solid;
+    border-radius: 25px;
+    padding-left: 15px;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #505050;
+}
+
+.QRToggle {
+    width: 142px;
+    height: 33px;
+    position: absolute;
+    left: 210px;
+    top: 240px;
+    right: 20px;
+    border: #B0E5E5 1px solid;
+    border-radius: 25px;
+    padding-left: 15px;
+    line-height: 0;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    color: #505050;
+}
+
+.IDicon {
+    padding-right: 10px;
+    padding-top: 3px
+}
+.QRicon {
+    padding-right: 10px;
+    padding-top: 3px
+}
+/*Vaccination Card Title*/
+h3 {
+    text-align: center;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 650;
+    font-size: 24px;
+    color: #393939;
+
+}
+/*Vaccination Card Info*/
+.gridContainer {
+    display: grid;
+    width: 320px;
+    height: 190px;
+    grid-template-columns: 85px 15px 115px 35px 40px;
+    grid-template-rows: 20px 35px 20px 35px 20px 35px;
+    grid-template-areas:
+      'header header header humanservices CDC'
+      'instruction instruction instruction humanservices CDC'
+      'moderna1 code1 code1 code1 code1'
+      'date1 date1 date1 date1 date1'
+      'moderna2 code2 code2 code2 code2'
+      'date2 date2 date2 date2 date2'
+      ;
+    grid-gap: 3px;
+    background-color: white;
+    padding-left: 15px;
+    padding-top: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 24px #0000001f;
+  }
+  
+.gridContainer > div {
+    background-color: white;
+    text-align: left;
+  }
+.recordHeader { 
+      grid-area: header; 
+      font-family: "Lato", sans-serif;
+      font-size: 13px;
+      font-weight: 650;
+      color:#393939;
+
+    }
+.recordInstruction { 
+      grid-area: instruction; 
+      font-family: "Lato", sans-serif;
+      font-size: 8px;
+      font-weight: 400;
+      line-height: 1.35;
+      padding-right: 20px;
+
+    }
+.humanServices  { 
+      grid-area: humanservices; 
+
+    }
+.CDC { 
+      grid-area: CDC; 
+      padding-top: 2px;
+    }
+.vaccinationInfo1 { 
+      grid-area: moderna1;
+      font-family: "SF Pro", sans-serif;
+      font-size: 17px;
+      font-weight: 650; 
+      color: #2F767A;
+
+    }
+.vaccinationCode1 { 
+      grid-area: code1; 
+      font-family: "Lato", sans-serif;
+      font-size: 12px;
+      font-weight: 300; 
+      color: #505050;
+      padding-top: 4px;
+    }
+.vaccinationDate1 { 
+      grid-area: date1; 
+      font-family: "Heebo", sans-serif;
+      font-size: 14px;
+      font-weight: 650; 
+      color:#A8A8A8;
+    }
+.vaccinationInfo2 { 
+      grid-area: moderna2; 
+      font-family: "SF Pro", sans-serif;
+      font-size: 17px;
+      font-weight: 650; 
+      color: #2F767A;
+    }
+.vaccinationCode2 { 
+      grid-area: code2;
+      font-family: "Lato", sans-serif;
+      font-size: 12px;
+      font-weight: 300; 
+      color: #505050;
+      padding-top: 4px; 
+    }
+.vaccinationDate2 { 
+      grid-area: date2; 
+      font-family: "Heebo", sans-serif;
+      font-size: 14px;
+      font-weight: 650; 
+      color:#A8A8A8;
+    }
+
+/*Add Card Button*/
+.cardButton {
+    width: 300px;
+    height: 50px;
+    background-color: #2F767A;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Heebo", sans-serif;
+    font-size: 22px;
+    font-weight: 650; 
+    color: white;
+    margin-top: 30px;
+    margin-left: 35px;
+    border-radius: 25px;
+}
+
+/*QR Code Section*/
+.QRCodeCard {
+    position: absolute;
+    top: 350px;
+    width: 275px;
+    height: 280px;
+    background-color:white;
+    margin-left: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 24px #0000001f;
+}
+.QRCodeCard img {
+    padding-top: 20px;
+    padding-left: 28px;
+    padding-bottom: 5px;
+}
+.serial {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 300; 
+    color: #505050;
+}
+
+.COVIDContainer {
+    position: absolute;
+    top: 635px;
+    display: grid;
+    width: 350px;
+    grid-template-columns: 50px 250px;
+    grid-row: 30px 25px;
+    grid-template-areas: 
+    'COVIDTitle COVIDTitle'
+    'COVIDCheckmark COVIDDate';
+    grid-gap: 5px;
+    padding-top: 10px;
+    margin-left: 30px;
+}
+.COVIDTitle {
+    grid-area: COVIDTitle;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 300; 
+    font-size: 14px;
+    padding-left: 10px;
+}
+.COVIDCheckmark {
+    grid-area: COVIDCheckmark;
+    padding-left:25px;
+}
+.COVIDDate{
+    padding-top: 2px;
+    grid-area: COVIDDate;
+    font-family: "Lato", sans-serif;
+    font-weight: 650; 
+    font-size: 17px;
+    padding-left: 5px;
+}
+
+/*Navigation Buttons*/
+.navContainer {
+    height: 65px;
+    width: 350px;
+    position: absolute;
+    top: 705px;
+    left: 22px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 56px 56px 56px 56px 56px;
+    grid-template-rows: 65px;
+    grid-template-areas:
+      'search update profile map message';
+    grid-gap: 5px;
+    background-color:white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-top: 15px;
+    border-radius: 25px;
+    box-shadow: 0px 8px 24px #0000001f;
+  }
+
+.search { 
+    grid-area: search; 
+    background-color: white;
+    width: 55px;
+}
+.updates { 
+    grid-area: update; 
+    background-color: white;
+    width: 55px;
+}
+.profile { 
+    grid-area: profile; 
+    background-color: #50B1B0;
+    width: 55px;
+}
+.map { 
+    grid-area: map; 
+    background-color: white;
+    width: 55px;
+}
+.messages { 
+    grid-area: message; 
+    background-color: white;
+    width: 55px;
+}
+
+.navItem {
+    font-size: 9px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 400;
+    color: #B2D5D5;
+}
+
+.navItemOn {
+    font-size: 9px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 400; 
+    color: white;
+}
+.navContainer button{
+    border: none;
+    border-radius: 20px;
+}

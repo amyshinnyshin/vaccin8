@@ -1,0 +1,134 @@
+body {
+    width: 375px;
+}
+/*Date Leaving Box*/
+.dateLeaving {
+    position: absolute;
+    top: 120px;
+    left: 30px;
+    width: 82px;
+    height: 82px;
+    background-color: #3D9594;
+    border-radius: 20px;
+}
+#month {
+    font-family: "SF Pro", sans-serif;
+    font-size: 25px;
+    font-weight: 200;
+    line-height: 0.2;  
+    text-align: center;
+    color: white;
+}
+#date {
+    font-family: "SF Pro", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 0.4;  
+    text-align: center;
+    color: white;
+}
+/*Header Container*/
+.headerContainer {
+    height: 400px; 
+    display: grid;
+    grid-gap: 1px;
+    justify-content: space-between;
+    grid-template-columns: 30px 75px 85px 60px 50px 30px;
+    grid-template-rows: 70px 15px 28px 14px 15px;
+    grid-template-areas: 
+    'back blank blank blank blank notes'
+    'Austin Austin Austin Austin Sydney Sydney'
+    'abbr1 abbr1 abbr1 airplaneIcon abbr2 abbr2'
+    'FN1 FN1 FN1 FN1 FN2 FN2'
+    'FD1 FD1 FD1 FD1 FD2 FD2'
+    ;
+    background-color: #50B1B0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    border-bottom-left-radius: 165px;
+    border-bottom-right-radius: 165px;
+  }
+.headerContainer > div{
+    background-color: #50B1B0;
+}
+.back { 
+    grid-area: back;
+}
+.notes { 
+    grid-area: notes; 
+}
+.city1 { 
+    grid-area: Austin; 
+    font-size: 11px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 600;
+    color: white;
+    padding-left: 110px;
+}
+.cityAbbreviation1 { 
+    grid-area: abbr1;
+    font-size: 30px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 500;
+    color: #1A2E35;
+    padding-left: 110px;
+    line-height: 0.8;
+    
+}
+.flightNumber1 { 
+    grid-area: FN1; 
+    font-size: 11px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 400;
+    color: #1A2E35;
+    padding-left: 110px;
+}
+.flightDate1 {
+    grid-area: FD1;
+    font-size: 9px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 200;
+    color: #1A2E35;
+    padding-left: 110px;
+}
+.airplaneIcon {
+    grid-area:airplaneIcon;
+    padding-left: 5px;
+}
+.city2 { 
+    grid-area: Sydney; 
+    font-size: 11px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 600;
+    color: white;
+    text-align: right;
+}
+.cityAbbreviation2 { 
+    grid-area: abbr2; 
+    font-size: 30px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 500;
+    color: #1A2E35;
+    text-align: right;
+    line-height: 0.8;
+}
+.flightNumber2 { 
+    grid-area: FN2; 
+    font-size: 11px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 400;
+    color: #1A2E35;
+    text-align: right;
+}
+.flightDate2 {
+    grid-area: FD2;
+    font-size: 9px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 200;
+    color: #1A2E35;
+    text-align: right;
+}
+.blank {
+    grid-area: blank;
+}
