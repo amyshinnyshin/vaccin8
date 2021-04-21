@@ -1,0 +1,283 @@
+body {
+    width: 375px;
+}
+/*Date Leaving Box*/
+.dateLeaving {
+    position: absolute;
+    top: 120px;
+    left: 30px;
+    width: 82px;
+    height: 82px;
+    background-color: #3D9594;
+    border-radius: 20px;
+}
+#month {
+    font-family: "SF Pro", sans-serif;
+    font-size: 25px;
+    font-weight: 200;
+    line-height: 0.2;  
+    text-align: center;
+    color: white;
+}
+#date {
+    font-family: "SF Pro", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 0.4;  
+    text-align: center;
+    color: white;
+}
+/*Header Container*/
+.headerContainer {
+    height: 400px; 
+    display: grid;
+    grid-gap: 1px;
+    justify-content: space-between;
+    grid-template-columns: 30px 75px 85px 60px 50px 30px;
+    grid-template-rows: 70px 15px 28px 14px 15px;
+    grid-template-areas: 
+    'back blank blank blank blank notes'
+    'Austin Austin Austin Austin Sydney Sydney'
+    'abbr1 abbr1 abbr1 airplaneIcon abbr2 abbr2'
+    'FN1 FN1 FN1 FN1 FN2 FN2'
+    'FD1 FD1 FD1 FD1 FD2 FD2'
+    ;
+    background-color: #50B1B0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    border-bottom-left-radius: 165px;
+    border-bottom-right-radius: 165px;
+  }
+.headerContainer > div{
+    background-color: #50B1B0;
+}
+.back { 
+    grid-area: back;
+}
+.notes { 
+    grid-area: notes; 
+}
+.city1 { 
+    grid-area: Austin; 
+    font-size: 11px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 600;
+    color: white;
+    padding-left: 110px;
+}
+.cityAbbreviation1 { 
+    grid-area: abbr1;
+    font-size: 30px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 500;
+    color: #1A2E35;
+    padding-left: 110px;
+    line-height: 0.8;
+    
+}
+.flightNumber1 { 
+    grid-area: FN1; 
+    font-size: 11px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 400;
+    color: #1A2E35;
+    padding-left: 110px;
+}
+.flightDate1 {
+    grid-area: FD1;
+    font-size: 9px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 200;
+    color: #1A2E35;
+    padding-left: 110px;
+}
+.airplaneIcon {
+    grid-area:airplaneIcon;
+    padding-left: 5px;
+}
+.city2 { 
+    grid-area: Sydney; 
+    font-size: 11px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 600;
+    color: white;
+    text-align: right;
+}
+.cityAbbreviation2 { 
+    grid-area: abbr2; 
+    font-size: 30px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 500;
+    color: #1A2E35;
+    text-align: right;
+    line-height: 0.8;
+}
+.flightNumber2 { 
+    grid-area: FN2; 
+    font-size: 11px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 400;
+    color: #1A2E35;
+    text-align: right;
+}
+.flightDate2 {
+    grid-area: FD2;
+    font-size: 9px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 200;
+    color: #1A2E35;
+    text-align: right;
+}
+.blank {
+    grid-area: blank;
+}
+/*itineraryContainer*/
+.itineraryContainer {
+    position: absolute;
+    top: 245px;
+    height: 530px;
+    display: grid;
+    grid-template-columns: 35px 110px 15px 50px 25px 45px; 
+    grid-template-rows: 110px 15px 5px 50px 25px 35px 40px 50px 20px 125px;
+    grid-template-areas:
+      'airlineIcon airlineIcon airlineIcon airlineIcon airlineIcon airlineIcon'
+      'passenger passenger passenger FNTitle FNTitle flightnumber'
+      'name name name FNTitle FNTitle flightnumber'
+      'name name name SNTitle SNTitle SN'
+      'hotelIcon hotel hotel hotel hotel notesEditing'
+      'hotelIcon hotel hotel hotel hotel notesEditing'
+      'locationIcon locations locations locations locations locations'
+      'restaurantIcon restaurants restaurants restaurants restaurants restaurants'
+      'boardingPass boardingPass boardingPass boardingPass info info'
+      'ticket ticket ticket ticket ticket ticket';
+    grid-gap: 3px;
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 25px;
+    padding-right: 20px;
+    margin-left: 20px;
+    border-radius: 45px;
+    box-shadow: 0px 8px 24px #0000001f;
+  }
+  
+.itineraryContainer > div {
+    background-color: white;
+  }
+
+.airlineIcon { 
+    grid-area: airlineIcon; 
+    text-align: right;
+    padding-top: 10px;
+}
+.passenger { 
+    grid-area: passenger; 
+    color: #A8A8A8;
+    font-size: 11px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 500;
+}
+.name { 
+    grid-area: name; 
+    font-size: 24px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 650;
+    color: #1A2E35;
+}
+.flightNumberTitles { 
+    grid-area: FNTitle; 
+    color: #A8A8A8;
+    font-size: 10px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 500;
+    padding-top: 6px;
+}
+.flightNumber { 
+    grid-area: flightnumber; 
+    padding-top: 3px;
+    font-size: 13px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 500;
+    color: #1A2E35;
+}
+.seatNumberTitles {
+    grid-area: SNTitle;
+    padding-top: 1px;
+    color: #A8A8A8;
+    font-size: 10px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 500;
+}
+.seatNumber {
+    grid-area: SN;
+    font-size: 13px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 500;
+    color: #1A2E35;
+}
+.hotelIcon {
+    grid-area: hotelIcon;  
+    padding-left: 5px;
+}
+.hotel {
+    grid-area: hotel;
+}
+.hotelName { 
+    font-size: 13px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 500;
+    color: #1A2E35;
+    padding-top: 1px;
+    padding-bottom: 3px;
+}
+.hotelAddress {
+    font-size: 11px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 200;
+    color: #1A2E35;
+}
+.notesEditing {
+    grid-area: notesEditing;
+    text-align: right;
+}
+.locationIcon {
+    grid-area: locationIcon;
+    padding-left: 5px;
+}
+.locations {
+    grid-area: locations;
+    font-size: 13px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 500;
+    color: #1A2E35;
+    padding-top: 1px;
+}
+.restaurantIcon {
+    grid-area: restaurantIcon;
+    padding-left: 5px;
+}
+.restaurants {
+    grid-area: restaurants;
+    padding-top: 1px;
+    font-size: 13px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 500;
+    color: #1A2E35;
+}
+.boardingPass {
+    grid-area: boardingPass;
+    padding-top: 1px;
+    font-size: 17px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 200;
+    color: #1A2E35;
+    padding-left: 100px;
+}
+.info {
+    grid-area: info;
+}
+.boardingTicket {
+    grid-area: ticket;
+    text-align: center;
+    padding-top: 12px;
+}

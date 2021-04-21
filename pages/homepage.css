@@ -1,0 +1,252 @@
+body {
+    width: 375px;
+}
+/*Profile Container*/
+.profile-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr ;
+    grid-template-rows: 75px 90px;
+    grid-template-areas: 
+      'image edit'
+      'greeting blank';
+    background-color: white;
+    padding-top: 60px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 15px;
+  }
+
+.profileImage { 
+    grid-area: image; 
+    padding-bottom: 5px
+}
+
+.profileGreeting { 
+    grid-area: greeting; 
+    font-family: "SF Pro", sans-serif;
+    color: #393939;
+    padding-top: 0;
+}
+
+.profileGreeting p{
+    line-height: 0.05;
+}
+
+.greeting {
+    font-size: 30px; 
+    font-weight: 200; 
+}
+
+.profileName {
+    font-size: 36px;
+    font-weight: 650;
+}
+
+.edit { 
+    grid-area: edit;
+    padding-left: 70%;   
+}
+
+.blank { 
+    grid-area: blank; 
+}
+
+.profile-container > div {
+  background-color:white;
+}
+
+/*Feeling Sick*/
+.heroimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 42px;
+    padding-left: 40px;
+    padding-bottom: 2px;
+}
+.COVID-container {
+    position: relative;
+}
+.imgTitle {
+    position: absolute;
+    top: 20px;
+    left: 65px;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-size: 22px;
+    color: #235558;
+  }
+.imgText1 {
+    position: absolute;
+    top: 55px;
+    left: 65px;
+    right: 175px;
+    font-family: "Lato", sans-serif;
+    font-weight: 200;
+    font-size: 11px;
+    line-height: 1.1;
+    color: #235558;
+}
+.imgText2 {
+    position: absolute;
+    top: 80px;
+    left: 65px;
+    right: 190px;
+    font-family: "Lato", sans-serif;
+    font-weight: 200;
+    font-size: 11px;
+    line-height: 1.1;
+    color: #235558;
+}
+
+/*Overview*/
+.overview {
+    font-family: SF Pro, sans-serif;
+    font-size: 24px;
+    font-weight: 650;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    color: #393939;
+}
+/*Homepage Buttons*/
+.button-container {
+    display: grid;
+    grid-template-columns: 145px 145px;
+    grid-template-rows: 135px 135px;
+    grid-template-areas: 
+    'passport itinerary'
+    'document call';
+    grid-gap: 6px;
+    background-color: white;
+    padding-top: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 5px;
+  }
+
+.buttonItem1 { 
+    grid-area: passport; 
+    background-color: #50B1B0;
+    padding-bottom: 5px;
+
+}
+.buttonItem2 { 
+    grid-area: itinerary; 
+    background-color: #37519B;
+    padding-bottom: 5px;
+}
+.buttonItem3 { 
+    grid-area: document; 
+    background-color: #F85D4F;
+    padding-bottom: 5px;
+}
+.buttonItem4 { 
+    grid-area: call; 
+    background-color: #F68A43;
+    padding-bottom: 5px;
+}
+
+.passport {
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "SF Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+.itinerary {
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "SF Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+.document {
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "SF Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+.chat {
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "SF Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.button-container button {
+    border: none;
+    border-radius: 15px;
+}
+
+/*Navigation Buttons*/
+.navContainer {
+    height: 65px;
+    width: 350px;
+    position: absolute;
+    top: 705px;
+    left: 22px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 56px 56px 56px 56px 56px;
+    grid-template-rows: 65px;
+    grid-template-areas:
+      'search update profile map message';
+    grid-gap: 5px;
+    background-color:white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-top: 15px;
+    border-radius: 25px;
+    box-shadow: 0px 8px 24px #0000001f;;
+  }
+
+.search { 
+    grid-area: search; 
+    background-color: white;
+    width: 55px;
+}
+.updates { 
+    grid-area: update; 
+    background-color: white;
+    width: 55px;
+}
+.profile { 
+    grid-area: profile; 
+    background-color: #50B1B0;
+    width: 55px;
+}
+.map { 
+    grid-area: map; 
+    background-color: white;
+    width: 55px;
+}
+.messages { 
+    grid-area: message; 
+    background-color: white;
+    width: 55px;
+}
+
+.navItem {
+    font-size: 9px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 400;
+    color: #B2D5D5;
+}
+
+.navItemOn {
+    font-size: 9px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 400; 
+    color: white;
+}
+.navContainer button{
+    border: none;
+    border-radius: 20px;
+}
