@@ -132,3 +132,152 @@ body {
 .blank {
     grid-area: blank;
 }
+/*itineraryContainer*/
+.itineraryContainer {
+    position: absolute;
+    top: 245px;
+    height: 530px;
+    display: grid;
+    grid-template-columns: 35px 110px 15px 50px 25px 45px; 
+    grid-template-rows: 110px 15px 5px 50px 25px 35px 40px 50px 20px 125px;
+    grid-template-areas:
+      'airlineIcon airlineIcon airlineIcon airlineIcon airlineIcon airlineIcon'
+      'passenger passenger passenger FNTitle FNTitle flightnumber'
+      'name name name FNTitle FNTitle flightnumber'
+      'name name name SNTitle SNTitle SN'
+      'hotelIcon hotel hotel hotel hotel notesEditing'
+      'hotelIcon hotel hotel hotel hotel notesEditing'
+      'locationIcon locations locations locations locations locations'
+      'restaurantIcon restaurants restaurants restaurants restaurants restaurants'
+      'boardingPass boardingPass boardingPass boardingPass info info'
+      'ticket ticket ticket ticket ticket ticket';
+    grid-gap: 3px;
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 25px;
+    padding-right: 20px;
+    margin-left: 20px;
+    border-radius: 45px;
+    box-shadow: 0px 8px 24px #0000001f;
+  }
+  
+.itineraryContainer > div {
+    background-color: white;
+  }
+
+.airlineIcon { 
+    grid-area: airlineIcon; 
+    text-align: right;
+    padding-top: 10px;
+}
+.passenger { 
+    grid-area: passenger; 
+    color: #A8A8A8;
+    font-size: 11px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 500;
+}
+.name { 
+    grid-area: name; 
+    font-size: 24px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 650;
+    color: #1A2E35;
+}
+.flightNumberTitles { 
+    grid-area: FNTitle; 
+    color: #A8A8A8;
+    font-size: 10px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 500;
+    padding-top: 6px;
+}
+.flightNumber { 
+    grid-area: flightnumber; 
+    padding-top: 3px;
+    font-size: 13px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 500;
+    color: #1A2E35;
+}
+.seatNumberTitles {
+    grid-area: SNTitle;
+    padding-top: 1px;
+    color: #A8A8A8;
+    font-size: 10px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 500;
+}
+.seatNumber {
+    grid-area: SN;
+    font-size: 13px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 500;
+    color: #1A2E35;
+}
+.hotelIcon {
+    grid-area: hotelIcon;  
+    padding-left: 5px;
+}
+.hotel {
+    grid-area: hotel;
+}
+.hotelName { 
+    font-size: 13px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 500;
+    color: #1A2E35;
+    padding-top: 1px;
+    padding-bottom: 3px;
+}
+.hotelAddress {
+    font-size: 11px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 200;
+    color: #1A2E35;
+}
+.notesEditing {
+    grid-area: notesEditing;
+    text-align: right;
+}
+.locationIcon {
+    grid-area: locationIcon;
+    padding-left: 5px;
+}
+.locations {
+    grid-area: locations;
+    font-size: 13px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 500;
+    color: #1A2E35;
+    padding-top: 1px;
+}
+.restaurantIcon {
+    grid-area: restaurantIcon;
+    padding-left: 5px;
+}
+.restaurants {
+    grid-area: restaurants;
+    padding-top: 1px;
+    font-size: 13px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 500;
+    color: #1A2E35;
+}
+.boardingPass {
+    grid-area: boardingPass;
+    padding-top: 1px;
+    font-size: 17px;
+    font-family: "SF Pro", sans-serif;
+    font-weight: 200;
+    color: #1A2E35;
+    padding-left: 100px;
+}
+.info {
+    grid-area: info;
+}
+.boardingTicket {
+    grid-area: ticket;
+    text-align: center;
+    padding-top: 12px;
+}
