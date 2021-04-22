@@ -66,13 +66,12 @@ body {
     position: absolute;
     left: 20px;
     top: 240px;
-    background-color: #C7EAEA;
-    border: #C7EAEA 1px solid;
+    border: #B0E5E5 1px solid;
     border-radius: 25px;
     padding-left: 15px;
     font-family: "Lato", sans-serif;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 200;
     color: #505050;
 }
 
@@ -83,13 +82,14 @@ body {
     left: 210px;
     top: 240px;
     right: 20px;
-    border: #B0E5E5 1px solid;
+    background-color: #C7EAEA;
+    border: #C7EAEA 1px solid;
     border-radius: 25px;
     padding-left: 15px;
     line-height: 0;
     font-family: "Lato", sans-serif;
     font-size: 14px;
-    font-weight: 200;
+    font-weight: 400;
     color: #505050;
 }
 
